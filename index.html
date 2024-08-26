@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge One</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <main class="main">
+        <div class="content__esq" id="content__esq">
+            <div class="logo">
+                <img class="cabecalho__logo" src="assets/logocabe.png" alt="logo de segurança">
+            </div>
+            <div class="content__esq--all">
+                <div class="input__div" id="input__div">
+                    <textarea id="content__esq--input" class="content__esq--input" oninput="auto_grow(this)" placeholder="Digite seu texto"></textarea>
+                </div>
+                <div class="avisos">
+                    <img class="exclamacao__image" src="assets/exclamao.png" alt="">
+                    <p class="main__aviso">Apenas letras minúsculas e sem acento.</p>
+                </div>
+                <div class="buttons">
+                    <button class="button__esq" type="button" onclick="code(); toShow(); toHidden(); getHeight()">Criptografar</button>
+                   <button class="button__dir" type="button" onclick="decode(); ">Descriptografar</button>
+                </div>
+            </div>
+        </div>
+        <div class="content__dir--all">
+            <div id="content__dir--hidden" class="content__dir--hidden">
+                <div class="div__output">
+                    <output id="output" class="output"></output>
+                </div>
+                <div class="div__button--copy">
+                    <button id="copy__button--hidden" class="copy__button--hidden" type="button" onclick="toCopy()">Copiar</button>
+                </div>
+            </div>
+            <div id="content__dir--nothidden" class="content__dir--nothidden">
+                <img class="image--nothidden" src="assets/cadeado.png" alt="procurando tesouro">
+                <p class="textalert--nothidden">Nenhuma mensagem encontrada</p>
+                <p class="text--nothidden">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+        </div>
+    </main>
+    <footer class="rodape">
+        <div class="rodape__desenvolvedor">
+            Desenvolvido por <strong>Leonardo Teodoro</strong>
+        </div>
+        <div class="rodape__links">
+            <a target="_blank" href="https://github.com/LeonardoTeodoroSantos?tab=repositories">
+                <img class="link__git" src="assets/logogithub.png" alt="logo GitHub">
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/in/leonardo-teodoro-dev/">
+                <img class="link__linke" src="assets/logolinkedin.png" alt="LinkedIn">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
