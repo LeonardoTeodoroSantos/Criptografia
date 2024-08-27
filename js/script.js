@@ -46,6 +46,5 @@ function getHeight() {
     
     if (elemWidth >= 375) {
         document.getElementById("content__esq--input").style.height = "60.8rem";
-        console.log(elemWidth);
     }
 }
